@@ -19,105 +19,129 @@ import search_active from '../assets/active_search.svg';
 import library_active from '../assets/active_library.svg';
 import settings_active from '../assets/active_settings.svg';
 
-interface IMusic {
-  image: string;
-  text: string;
+export interface IMusic {
+   image: string;
+   text: string;
+   tipo: string;
 }
 
 export const musics: IMusic[] = [
-  {
-    image: music1,
-    text: 'The wall - Pink Floyd',
-  },
-  {
-    image: music2,
-    text: 'Bad Reputation',
-  },
-  {
-    image: music3,
-    text: 'I love rock n roll',
-  },
-  {
-    image: music4,
-    text: 'Another One Bites The Dust',
-  },
-  {
-    image: music7,
-    text: 'Sargent Peppers and the Broken Heart sons',
-  },
-  {
-    image: music5,
-    text: 'Who want To Live Forever',
-  },
-  {
-    image: music8,
-    text: 'Bete Balanço',
-  },
-  {
-    image: music6,
-    text: 'Let it be',
-  },
+   {
+      image: music1,
+      text: 'The wall - Pink Floyd',
+      tipo: 'Música',
+   },
+   {
+      image: music2,
+      text: 'Bad Reputation',
+      tipo: 'Música',
+   },
+   {
+      image: music3,
+      text: 'I love rock n roll',
+      tipo: 'Música',
+   },
+   {
+      image: music4,
+      text: 'Another One Bites The Dust',
+      tipo: 'Música',
+   },
+   {
+      image: music7,
+      text: 'Sargent Peppers and the Broken Heart sons',
+      tipo: 'Música',
+   },
+   {
+      image: music5,
+      text: 'Who want To Live Forever',
+      tipo: 'Música',
+   },
+   {
+      image: music8,
+      text: 'Bete Balanço',
+      tipo: 'Música',
+   },
+   {
+      image: music6,
+      text: 'Let it be',
+      tipo: 'Música',
+   },
+   {
+      image: music1,
+      text: 'RPM',
+      tipo: 'Artista',
+   },
+   {
+      image: music1,
+      text: 'Os mutantes',
+      tipo: 'Artista',
+   },
+   {
+      image: music8,
+      text: 'U2',
+      tipo: 'Artista',
+   },
 ];
 
 export const optionsType = [
-  {
-    text: 'Músicas',
-  },
-  {
-    text: 'Álbuns',
-  },
-  {
-    text: 'Podcasts',
-  },
-  {
-    text: 'Artistas',
-  },
+   {
+      text: 'Músicas',
+   },
+   {
+      text: 'Álbuns',
+   },
+   {
+      text: 'Podcasts',
+   },
+   {
+      text: 'Artistas',
+   },
 ];
 
 interface IOptions {
-  src: string;
-  alt: string;
-  srcIsActive: string;
+   src: string;
+   alt: string;
+   srcIsActive: string;
 }
 
 export const optionsNavigation: IOptions[] = [
-  {
-    src: home,
-    alt: 'home',
-    srcIsActive: home_active,
-  },
-  {
-    src: search,
-    alt: 'search',
-    srcIsActive: search_active,
-  },
-  {
-    src: library,
-    alt: 'library',
-    srcIsActive: library_active,
-  },
-  {
-    src: settings,
-    alt: 'settings',
-    srcIsActive: settings_active,
-  },
+   {
+      src: home,
+      alt: 'home',
+      srcIsActive: home_active,
+   },
+   {
+      src: search,
+      alt: 'search',
+      srcIsActive: search_active,
+   },
+   {
+      src: library,
+      alt: 'library',
+      srcIsActive: library_active,
+   },
+   {
+      src: settings,
+      alt: 'settings',
+      srcIsActive: settings_active,
+   },
 ];
 
 export const images = [
-  {
-    image: img2,
-    text: 'Sextou',
-  },
-  {
-    image: img3,
-    text: 'Segundou',
-  },
-  {
-    image: img1,
-    text: 'Hora do foco no trabalho',
-  },
-  {
-    image: img4,
-    text: 'Almoçando em grande estilo',
-  },
+   {
+      image: img2,
+      text: 'Sextou',
+   },
+   {
+      image: img3,
+      text: 'Segundou',
+   },
+   {
+      image: img1,
+      text: 'Hora do foco no trabalho',
+   },
+   {
+      image: img4,
+      text: 'Almoçando em grande estilo',
+   },
 ];

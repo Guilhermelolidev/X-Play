@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
           --bg-blue-dark: #001B374A;
           --bg-white-two: #FFFFFFE6;
           --bg-disabled: #FFFFFF85;
+          --bg-shadow: #00000029;
+          --bg-shadow-light: #707070;
 
           --regular: 400;
           --light: 300;

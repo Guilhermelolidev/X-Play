@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { MusicBox } from '../../components/MusicBox';
 import { Slider } from '../../components/Slider';
 import { TypeBar } from '../../components/TypeBar';
@@ -6,21 +7,27 @@ import { MusicBoxContainer } from '../Library/styles';
 import { Container } from './styles';
 
 export const HomePage = () => {
-  return (
-    <Container>
-      <p className="title">Boa tarde, Guilherme!</p>
+   const [typeActive, setTypeActive] = useState<string>('Músicas');
 
-      <TypeBar />
+   const onSelect = (value: string) => {
+      setTypeActive(value);
+   };
 
-      <MusicBoxContainer>
-        {musics.map((music) => (
-          <MusicBox music={music} key={music.text} />
-        ))}
-      </MusicBoxContainer>
+   return (
+      <Container>
+         <p className="title">Boa tarde, Guilherme!</p>
 
-      <p className="secondTitle">Feitos para você</p>
+         <TypeBar typeActive={typeActive} onSelect={onSelect} />
 
-      <Slider data={images} />
-    </Container>
-  );
+         <MusicBoxContainer>
+            {musics.slice(0, 8).map((music) => (
+               <MusicBox music={music} key={music.text} />
+            ))}
+         </MusicBoxContainer>
+
+         <p className="secondTitle">Feitos para você</p>
+
+         <Slider data={images} />
+      </Container>
+   );
 };

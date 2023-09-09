@@ -2,19 +2,26 @@ import { TypeBar } from '../../components/TypeBar';
 import { MusicBox } from '../../components/MusicBox';
 import { Container, MusicBoxContainer } from './styles';
 import { musics } from '../../utils/constants';
+import { useState } from 'react';
 
 export const LibraryPage = () => {
-  return (
-    <Container>
-      <p className="title">Sua Biblioteca</p>
+   const [typeActive, setTypeActive] = useState<string>('Músicas');
 
-      <TypeBar />
+   const onSelect = (value: string) => {
+      setTypeActive(value);
+   };
 
-      <MusicBoxContainer>
-        {musics.map((music) => (
-          <MusicBox music={music} />
-        ))}
-      </MusicBoxContainer>
-    </Container>
-  );
+   return (
+      <Container>
+         <p className="title">Sua Biblioteca</p>
+
+         <TypeBar typeActive={typeActive} onSelect={onSelect} />
+
+         <MusicBoxContainer>
+            {musics.slice(0, 8).map((music) => (
+               <MusicBox music={music} key={music.text} />
+            ))}
+         </MusicBoxContainer>
+      </Container>
+   );
 };
