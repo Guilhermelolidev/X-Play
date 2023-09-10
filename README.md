@@ -4,6 +4,13 @@
 
 ### `yarn start`
 
+Tecnologias:
+React / html / css
+Typescript
+Styled-Components
+Framer-motion
+React-router-dom
+
 
 Produção: 
 https://x-play-n00f14vwp-guilhermelolidev.vercel.app/home ou https://x-play.vercel.app/home
