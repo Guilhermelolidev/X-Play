@@ -4,8 +4,11 @@
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Produção: 
+https://x-play-n00f14vwp-guilhermelolidev.vercel.app/home ou https://x-play.vercel.app/home
+
+Imagens do desafio no navegador:
 
 ![image](https://github.com/Guilhermelolidev/X-Play/assets/141258877/8ef9b64e-ceac-48f9-a980-eebc74de1fee)
 ![image](https://github.com/Guilhermelolidev/X-Play/assets/141258877/8f5f23db-26d8-446f-90a0-5c2f94086c67)
