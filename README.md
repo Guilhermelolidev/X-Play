@@ -5,11 +5,11 @@
 ### `yarn start`
 
 Tecnologias:
-React / html / css
-Typescript
-Styled-Components
-Framer-motion
-React-router-dom
+* React / html / css
+* Typescript
+* Styled-Components
+* Framer-motion
+* React-router-dom
 
 
 Produção: 
