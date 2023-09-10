@@ -16,6 +16,11 @@ export const GlobalStyle = createGlobalStyle`
           --bg-disabled: #FFFFFF85;
           --bg-shadow: #00000029;
           --bg-shadow-light: #707070;
+          --bg-shadow-dark: #00000040;
+          --bg-pink: #ba4e8b;
+          --bg-purple: #a64d9a;
+          --bg-purple-dark: #944db7;
+
 
           --regular: 400;
           --light: 300;

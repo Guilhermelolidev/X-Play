@@ -4,9 +4,13 @@ export const Container = styled.div<{ isopen: boolean }>`
    width: 98%;
    height: ${(props) => (!props.isopen ? '99px' : '770px')};
    background: transparent
-      linear-gradient(180deg, #ba4e8b 0%, #a64d9a 51%, #944db7 100%) 0% 0%
-      no-repeat padding-box;
-   box-shadow: 0px 0px 15px #00000040;
+      linear-gradient(
+         180deg,
+         var(--bg-pink) 0%,
+         var(--bg-purple) 51%,
+         var(--bg-purple-dark) 100%
+      );
+   box-shadow: 0px 0px 15px var(--bg-shadow-dark);
    border-radius: 6px 6px 0px 0px;
    opacity: 0.9;
    position: absolute;
@@ -116,13 +120,28 @@ export const ContainerOpen = styled.div`
 
       .nextmusicBtn {
          transform: scaleX(-1);
-         margin-right: 8px;
+         margin-left: 8px;
       }
 
       .nextmusicBtnLeft {
          transform: scaleX(1);
-         margin-left: 8px;
+         margin-right: 8px;
       }
+   }
+`;
+
+export const Loader = styled.div`
+   width: 298px;
+   height: 10px;
+   background: var(--bg-disabled);
+   border-radius: 5px;
+   margin-top: 26px;
+
+   div {
+      width: 100px;
+      height: 10px;
+      border-radius: 5px;
+      background: var(--white);
    }
 `;
 

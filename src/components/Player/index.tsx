@@ -9,6 +9,7 @@ import {
    ContainerTexts,
    DragIcon,
    InfoMusic,
+   Loader,
    MusicText,
    PlayerImage,
 } from './styles';
@@ -51,6 +52,10 @@ export const Player = () => {
                      <img src={nextmusic} alt="" />
                   </Button>
                </div>
+
+               <Loader>
+                  <div />
+               </Loader>
 
                <ContainerTexts>
                   <p>Não tinha medo o tal João de Santo Cristo</p>
