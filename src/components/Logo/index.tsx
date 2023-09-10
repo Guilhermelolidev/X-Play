@@ -1,9 +1,9 @@
 import { LogoStyled } from './styles';
 
 interface LogoProps {
-  src: string;
+   src: string;
 }
 
 export const Logo = ({ src }: LogoProps) => {
-  return <LogoStyled src={src} className="logo" />;
+   return <LogoStyled src={src} className="logo" alt="Logo" />;
 };

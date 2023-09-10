@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div<{ isopen: boolean }>`
+export const Container = styled.div<{ $isopen: boolean }>`
    width: 98%;
-   height: ${(props) => (!props.isopen ? '99px' : '770px')};
+   height: ${(props) => (!props.$isopen ? '99px' : '770px')};
    background: transparent
       linear-gradient(
          180deg,
@@ -27,12 +27,12 @@ export const ContainerClosed = styled.div`
    height: 100%;
 `;
 
-export const InfoMusic = styled.div<{ isopen?: boolean }>`
+export const InfoMusic = styled.div<{ $isopen?: boolean }>`
    display: flex;
    flex-direction: column;
-   margin-left: ${(props) => !props.isopen && '16px'};
-   align-items: ${(props) => (props.isopen ? 'center' : 'flex-start')};
-   margin-top: ${(props) => props.isopen && '22px'};
+   margin-left: ${(props) => !props.$isopen && '16px'};
+   align-items: ${(props) => (props.$isopen ? 'center' : 'flex-start')};
+   margin-top: ${(props) => props.$isopen && '22px'};
 
    .musicText {
       margin-top: 4px;
@@ -148,12 +148,12 @@ export const Loader = styled.div`
 export const PlayerImage = styled.img<{
    width: string;
    height: string;
-   isopen?: boolean;
+   $isopen?: boolean;
 }>`
    box-shadow: 0px 0px 20px var(--bg-shadow);
    border: 1px solid var(--shadow-light);
    border-radius: 8px;
    width: ${(props) => props.width};
    height: ${(props) => props.height};
-   margin-left: ${(props) => props.isopen && '16px'};
+   margin-left: ${(props) => props.$isopen && '16px'};
 `;

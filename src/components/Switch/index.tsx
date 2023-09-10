@@ -8,7 +8,12 @@ interface SwitchProps {
 export const Switch = ({ isDisabled, toggleSwitch }: SwitchProps) => {
    return (
       <SwitchStyled $isdisabled={isDisabled}>
-         <Input type="checkbox" checked={isDisabled} onChange={toggleSwitch} />
+         <Input
+            type="checkbox"
+            checked={isDisabled}
+            onChange={toggleSwitch}
+            data-testid="check"
+         />
          <Slider $isdisabled={isDisabled} />
       </SwitchStyled>
    );

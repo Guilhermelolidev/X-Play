@@ -26,13 +26,13 @@ export const Player = () => {
    };
 
    return (
-      <Container isopen={isOpen} onClick={onOpenPlayer}>
+      <Container $isopen={isOpen} onClick={onOpenPlayer}>
          {isOpen && (
             <ContainerOpen>
                <DragIcon src={drag} alt="" />
                <PlayerImage src={player} alt="" width="192px" height="192px" />
 
-               <InfoMusic isopen={isOpen}>
+               <InfoMusic $isopen={isOpen}>
                   <ArtistText className="artistText">
                      Faroeste caboclo
                   </ArtistText>

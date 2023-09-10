@@ -21,7 +21,7 @@ export const MusicBox = ({
    const chevron = '>';
 
    return (
-      <Card className="cardMusicBox" width={width}>
+      <Card className="cardMusicBox" width={width} data-testid="musicBoxTest">
          <img src={image} alt={text} />
 
          <div className="containerInfo">
