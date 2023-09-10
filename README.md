@@ -1,5 +1,5 @@
 
-
+Rodar no local: 
 ### `yarn`
 
 ### `yarn start`
